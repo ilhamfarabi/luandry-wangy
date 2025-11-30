@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background full page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Box Login */
+.login-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+/* Title dan subtitle */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Input form */
+.form-group {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(78, 115, 223, 0.4);
+}
+
+/* Tombol login */
+.btn-login {
+    background: #4e73df;
+    color: white;
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #2e59d9;
+}
+
+/* Footer link */
+.login-footer {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #4e73df;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Wrapper Login */
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #43e97b);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card Login */
+.login-box {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 350px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.login-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Input */
+.form-control {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem;
+    border: 1.5px solid #ddd;
+    margin-bottom: 1rem;
+    background: #f9f9ff;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+/* Animasi ketika klik input */
+.form-control:focus {
+    border-color: #4facfe;
+    background: #f0f8ff;
+    box-shadow: 0 0 12px rgba(79, 172, 254, 0.4);
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Tombol Login */
+.btn-login {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(56, 249, 215, 0.4);
+}
+
+/* Footer */
+.login-footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.login-footer a {
+    color: #4facfe;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======= ABOUT ======= */
+.about-box {
+  background: linear-gradient(135deg, #ffffff, #e6f7ff);
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease both;
+}
+.about-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,150,255,0.25);
+  background: linear-gradient(135deg, #f0faff, #e0f7ff);
+}
+.about-box h4 {
+  color: #0099ff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* ======= SERVICES ======= */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f9fdff);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease both;
+}
+.card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 18px 35px rgba(0,180,200,0.25);
+  background: linear-gradient(135deg, #f0fcff, #e6faff);
+}
+.card h5 {
+  color: #00aaff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* ======= CONTACT ======= */
+.contact-box {
+  background: linear-gradient(135deg, #ffffff, #f0fcff);
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease both;
+}
+.contact-box:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 15px 35px rgba(0,180,200,0.25);
+  background: linear-gradient(135deg, #f8ffff, #eafffa);
+}
+.contact-box h5 {
+  color: #00b3b3;
+  font-weight: bold;
+}
+
+/* ======= ANIMASI ======= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
