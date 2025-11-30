@@ -37,8 +37,7 @@ class LayananController extends Controller
 
     public function exportExcel()
     {
-        return Excel::download(new LayananExport, 'data_layanan.xlsx')
-            ->with('success', 'Berhasil export data layanan!');
+        return Excel::download(new LayananExport, 'data_layanan.xlsx');
     }
 
     public function create()
